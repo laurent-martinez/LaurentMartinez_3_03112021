@@ -305,7 +305,7 @@ template {
 
 /*****************************normalize**************************************************/
 html {
-  font-size: 10px; }
+  font-size: 62.5%; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -321,7 +321,7 @@ a, li {
   font-size: 1.6rem;
   font-weight: 450;
   border-radius: 50px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(.47turn, #FF79DA, #9356DC);
   border: none;
   color: white;
   -webkit-box-shadow: 3px 3px 9px 3px rgba(204, 204, 204, 0.96);
