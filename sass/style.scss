@@ -17,6 +17,7 @@ a, li {
     text-decoration: inherit;
 }
 
+
 p {
     font-family: 'Roboto', sans-serif;;
 }
@@ -93,31 +94,37 @@ header {
         padding:2.5rem  0 0 1.5rem ;
     }
     &__tabs {
-        padding: 0 2rem 0 3rem ;
+        padding: 0 2rem 0 4rem ;
         counter-reset: counter-name;
     }
            &__tab {
                display: flex;
-               justify-content: center;
+               justify-content: flex-start;
                align-items: center;
         position: relative;
         background-color:  #f6f6f6;
         font-size: 1.6rem;
         font-weight: 500;
-        padding: 2.8rem 1.5rem 2.8rem 2rem;
+        padding: 2.8rem 1.5rem 2.8rem 4rem;
         margin-top: 2rem;
         border-radius: 2rem;
         text-align: center;
         -webkit-box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66); 
         box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66);
-            &__icon {
-               font-size: 25rem;
-                margin-right: 5rem;
-            }
-            &:hover {
-              background-color: pastel(u.$primary);
-            }
+              &:hover {
+                //background-color: pastel(u.$primary);
+                background-color: hsl(267, 100%, 95%);
 
+              }
+            
+            &__icon {
+               font-size: 1.9rem;
+                padding-right: 3rem;
+                color: #5a5a5a;
+                
+            }
+         
+           
         }
         &__tab::before {
             counter-increment: counter-name;
@@ -139,4 +146,40 @@ header {
         }
     
  
+}
+
+.restaurants {
+  margin-top: 6.5rem;
+  padding-bottom: 5rem;
+  font-size: 1.7rem;
+  width: 100%;
+  background-color:  #f6f6f6;
+      &__heading {
+          padding:5rem  0 0 1.5rem ;
+      
+      }
+      &__group {
+        padding: 0 1.5rem;
+      }
+}
+.restaurant-cards {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+
+.footer {
+  background-color: rgb(44, 44, 44);
+  color: white;
+
+    &__logo {
+      font-family: 'Shrikhand', cursive;
+      font-size: 1.7rem;
+    }
+    &__nav {
+      margin: 0;
+      padding: 2rem;
+    }
 }

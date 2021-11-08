@@ -6,5 +6,5 @@
     $light: 95%;
     $pastel: hsl($hue, $sat, $light);
   
-    @return $pastel;
+    @return pastel;
   }
