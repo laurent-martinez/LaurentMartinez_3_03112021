@@ -120,9 +120,7 @@ header {
                 background-color: hsl(267, 100%, 95%);
                
               }
-              &:hover + #icone {
-                  color: blue;
-              }
+             
             
             &__icon {
                font-size: 1.9rem;
@@ -194,7 +192,8 @@ header {
         padding: 1.5rem  1.5rem;
         margin: 0;
         & p {
-            padding-top: .4rem;
+          padding-top: .3rem;
+          padding-bottom: .5rem;
             font-weight: 300;
             font-size: 1.7rem;
         }
@@ -203,6 +202,10 @@ header {
         font-size: 2.5rem;
         font-weight: 300;
         margin-right: 2.5rem;
+        //& .fa-heart:hover {
+           // background: linear-gradient(u.$primary,u.$secondary);
+           
+        //}
     }
     &__nouveau {
         position: absolute;
@@ -214,19 +217,29 @@ header {
         padding: .8rem 1rem;
         font-size: 1.5rem;
         border-radius: .2rem;
+       
 
     }
 }
 .footer {
-  background-color: rgb(44, 44, 44);
+  background-color: #323232;
   color: white;
 
     &__logo {
+        padding: 2rem 0 .5rem 2rem;
       font-family: 'Shrikhand', cursive;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
+      font-weight: lighter;
     }
     &__nav {
-      margin: 0;
-      padding: 2rem;
+        padding: 0 0 3rem 0;
+    }
+    &__tabs {
+        padding: .5rem 0 .5rem 2rem;  
+        font-size: 1.6rem;
+        margin-right: 1rem;
+        & i {
+            margin-right: 1rem;
+        }
     }
 }
