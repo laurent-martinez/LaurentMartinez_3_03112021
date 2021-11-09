@@ -17,8 +17,11 @@ a, li {
     text-decoration: inherit;
 }
 
-
+h3 {
+    margin: 0;
+}
 p {
+    margin: 0;
     font-family: 'Roboto', sans-serif;;
 }
 img {
@@ -102,6 +105,7 @@ header {
                justify-content: flex-start;
                align-items: center;
         position: relative;
+        cursor: pointer;
         background-color:  #f6f6f6;
         font-size: 1.6rem;
         font-weight: 500;
@@ -114,13 +118,17 @@ header {
               &:hover {
                 //background-color: pastel(u.$primary);
                 background-color: hsl(267, 100%, 95%);
-
+               
+              }
+              &:hover + #icone {
+                  color: blue;
               }
             
             &__icon {
                font-size: 1.9rem;
                 padding-right: 3rem;
                 color: #5a5a5a;
+                transition: transform .4s;
                 
             }
          
@@ -151,7 +159,7 @@ header {
 .restaurants {
   margin-top: 6.5rem;
   padding-bottom: 5rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   width: 100%;
   background-color:  #f6f6f6;
       &__heading {
@@ -163,13 +171,52 @@ header {
       }
 }
 .restaurant-cards {
+    width: 95%;
+    margin: auto;
   background-color: white;
   border-radius: 2rem;
-  padding: 2rem;
   margin-top: 2rem;
+  position: relative;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         
+    }
+ 
+    &__image img {
+        border-radius: 2rem 2rem 0 0;
+        width: 100%;
+        height: 17rem;
+        object-fit: cover;
+    }
+    &__text {
+        padding: 1.5rem  1.5rem;
+        margin: 0;
+        & p {
+            padding-top: .4rem;
+            font-weight: 300;
+            font-size: 1.7rem;
+        }
+    }
+    &__like {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-right: 2.5rem;
+    }
+    &__nouveau {
+        position: absolute;
+        background-color: u.$accent;
+        color: darken($color: u.$accent, $amount: 40%);
+        font-weight: 500;
+        top: 1.5rem;
+        right: 1.5rem;
+        padding: .8rem 1rem;
+        font-size: 1.5rem;
+        border-radius: .2rem;
+
+    }
 }
-
-
 .footer {
   background-color: rgb(44, 44, 44);
   color: white;
