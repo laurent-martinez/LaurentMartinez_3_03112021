@@ -253,26 +253,34 @@ header {
 
 
 .jumbotron {
-
-        z-index: 1;
+    
     & img {
          width: 100%;
          height: auto; 
+         z-index: 1;
+         margin-bottom: -6.5rem;
+    }
+    &__lanote {
+        transform: rotate(270deg);
+       
     }
   
 
 }
 
 .menu {
+    position: relative;
+    z-index: 10;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
     padding: 4rem 1.5rem 3rem 1.5rem;
-    z-index: 10;
+   
     background-color: #f6f6f6;
     &__title {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; background-color: #f6f6f6;
+
         
          & h1 {
             font-family: 'Shrikhand', cursive;
