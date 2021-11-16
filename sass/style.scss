@@ -271,14 +271,14 @@ img {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    & h1 {
+    & h2 {
         padding-left: 2rem;;
         font-family: 'Shrikhand', cursive;
         font-weight: 700;
         font-size: 6rem;
         color: white;
         text-shadow: 3px 3px 3px grey;
-        animation: title 0.2s ease-in-out infinite;
+       
 
     }
     & #food {
@@ -289,7 +289,7 @@ img {
             animation: man 0.7s ease-out infinite alternate-reverse;
         }
         & #fork-spoon {
-            animation: forks 1.2s ease-in-out infinite alternate-reverse;
+            animation: forks 1s ease-in-out infinite alternate-reverse;
             transform-origin: bottom;
         }
     }
@@ -313,14 +313,6 @@ img {
     }
 }
 
-@keyframes title {
-    0% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(-3%);
-    }
-}
 
 @keyframes forks {
     0% {
