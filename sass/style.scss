@@ -289,7 +289,7 @@ img {
             animation: man 0.7s ease-out infinite alternate-reverse;
         }
         & #fork-spoon {
-            animation: forks 1s ease-in-out infinite alternate-reverse;
+            animation: forks 0.7s ease-in-out infinite alternate-reverse;
             transform-origin: bottom;
         }
     }
@@ -316,12 +316,12 @@ img {
 
 @keyframes forks {
     0% {
-        transform: rotate(0deg) ;
+        transform: rotate(5deg) ;
 
         
     }
     100% {
-        transform: rotate(30deg) ;
+        transform: rotate(20deg) ;
     }
 }
 
