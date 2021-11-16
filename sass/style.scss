@@ -294,11 +294,11 @@ img {
         }
         & #man {
             & #Vector_17 {
-                animation: lookup 0.7s infinite ease-in-out alternate-reverse;
+                animation: headmove 0.7s infinite ease-in-out alternate-reverse;
                 transform-origin: bottom;
             }
             & #Vector_22 {
-                animation: lookup 0.7s infinite ease-in-out alternate-reverse;
+                animation: headmove 0.7s infinite ease-in-out alternate-reverse;
                 transform-origin: bottom;
             }
         }
@@ -347,7 +347,7 @@ img {
     }
 }
 
-@keyframes lookup {
+@keyframes headmove {
     0% {
         transform: rotateZ(0deg);
     }
