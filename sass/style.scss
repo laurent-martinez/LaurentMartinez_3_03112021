@@ -258,15 +258,16 @@ img {
 }
 
 .container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    
-    background: linear-gradient(315deg, #ffd8cb 8%,  #f9d29d 74%);
-    animation: fadeout 9s ease-out forwards;
-    z-index: 9999;
+    opacity: 0;
+    background-color: #fba8a4;
+background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+    animation: fadeout 9s  infinite ease-out forwards;
+    z-index: -1;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -282,6 +283,17 @@ img {
 
     }
     & #food {
+        & #cat {
+            animation: cat 0.7s  ease-out infinite alternate-reverse;
+            & #Vector_2_2 {
+                animation: catheadmove 0.7s infinite ease-in-out alternate-reverse;
+                transform-origin: bottom;
+            }
+            & #Vector_9_2 {
+                animation: cattales 0.7s infinite ease-in-out alternate-reverse;
+                transform-origin: left;
+            }
+        }
         & #hat {
           animation: hat 0.7s ease-out infinite alternate-reverse;
         }
@@ -291,16 +303,17 @@ img {
         & #fork-spoon {
             animation: forks 0.7s ease-in-out infinite alternate-reverse;
             transform-origin: bottom;
+            & #Vector_4 , #Vector_2 , #Vector_5 {
+                animation: forkshead 0.9s ease-in-out infinite ;
+                transform-origin: bottom;
+            }
         }
         & #man {
-            & #Vector_17 {
+            & #Vector_16 , #Vector_21 {
                 animation: headmove 0.7s infinite ease-in-out alternate-reverse;
                 transform-origin: bottom;
             }
-            & #Vector_22 {
-                animation: headmove 0.7s infinite ease-in-out alternate-reverse;
-                transform-origin: bottom;
-            }
+         
         }
     }
 }
@@ -324,9 +337,19 @@ img {
 }
 
 
+@keyframes cat {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-16%);
+    }
+}
+
+
 @keyframes forks {
     0% {
-        transform: rotate(5deg) ;
+        transform: rotate(0deg) ;
 
         
     }
@@ -335,12 +358,24 @@ img {
     }
 }
 
+@keyframes forkshead {
+    
+    0% {
+        transform : translateX(0%);
+    }
+    100% {
+        transform: translateX(1%);
+    }
+}
+
 @keyframes fadeout {
     0% {
+        z-index: 999;
         opacity: 1;
     }
     95% {
         opacity: 1;
+        z-index: 999;
     }
     100% {
         opacity: 0;
@@ -354,5 +389,26 @@ img {
     }
     100% {
         transform: rotateZ(1deg);
+    }
+}
+
+
+@keyframes catheadmove {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(.5deg);
+    }
+}
+
+@keyframes cattales {
+    0% {
+        transform: rotate(-5deg) ;
+
+        
+    }
+    100% {
+        transform: rotate(0deg) ;
     }
 }
