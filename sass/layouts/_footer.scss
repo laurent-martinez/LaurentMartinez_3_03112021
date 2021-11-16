@@ -1,0 +1,25 @@
+
+
+.footer {
+    background-color: #323232;
+    color: white;
+    margin-bottom: 0;
+  
+      &__logo {
+          padding: 2rem 0 .5rem 2rem;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.6rem;
+        font-weight: lighter;
+      }
+      &__nav {
+          padding: 0 0 3rem 0;
+      }
+      &__tabs {
+          padding: .5rem 0 .5rem 2rem;  
+          font-size: 1.6rem;
+          margin-right: 1rem;
+          & i {
+              margin-right: 1rem;
+          }
+      }
+  }

@@ -1,0 +1,38 @@
+
+
+.header {
+    background-color: white;
+    position: relative;
+}
+.logo__header {
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem 0 1.5rem 0;
+    width: 100%;
+    height: 100%;
+
+        & img {
+            width: 45%;
+            height: 45%;
+        }
+}
+
+.header {
+    display: flex;
+}
+.arrow__header {
+    color: #323232;
+    display: flex;
+    z-index: 11;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 900;
+    left: 3rem;
+    position: relative;
+    top: .5rem;
+}
+
+
