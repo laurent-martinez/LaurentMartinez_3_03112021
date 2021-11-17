@@ -1,0 +1,126 @@
+@use "../utils/index" as u;
+
+.location {
+    background-color: #ebebeb;
+    color: #323232;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+   
+        &__text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.6em;
+          font-weight: 500;
+           border: none;
+        width: 15ch;
+        padding: .5rem .5rem;
+           background-color:#ebebeb ;
+        }
+        &__icon {
+            font-size: 1.8em;
+            margin-right: 1rem;
+            margin-top: -.5rem;
+          
+        }
+}
+
+
+.introducing {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.8rem 0;
+        &__title {
+            font-size: 2.4rem;
+            padding: 1rem 5rem 1rem 5rem;
+        }
+        &__subtitle {
+            font-size: 1.8rem;
+            color:  #352f2f ;
+            font-style: italic;
+            font-weight: 300;
+            padding: .5rem 0 3rem 0;
+            margin: 0;
+        }
+        &__button {
+            padding-bottom: 3rem;
+        }
+}
+
+
+
+.restaurants {
+  margin-top: 6.5rem;
+  padding-bottom: 5rem;
+  font-size: 1.6rem;
+  width: 100%;
+  background-color:  #f6f6f6;
+      &__heading {
+          padding:5rem  0 0 1.5rem ;
+      
+      }
+      &__group {
+        padding: 0 1.5rem;
+      }
+}
+.restaurant-cards {
+    cursor: pointer;
+    width: 95%;
+    margin: auto;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66); 
+  box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66);
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         
+    }
+ 
+    &__image img {
+        border-radius: 2rem 2rem 0 0;
+        width: 100%;
+        height: 17rem;
+    }
+    &__text {
+        padding: 1.5rem  1.5rem;
+        margin: 0;
+        & p {
+          padding-top: .3rem;
+          padding-bottom: .5rem;
+            font-weight: 300;
+            font-size: 1.7rem;
+        }
+    }
+    &__like {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-right: 2.5rem;
+    }
+    &__nouveau {
+        position: absolute;
+        background-color: u.$accent;
+        color: darken($color: u.$accent, $amount: 40%);
+        font-weight: 500;
+        top: 1.5rem;
+        right: 1.4rem;
+        padding: .7rem 1.2rem;
+        font-size: 1.4rem;
+        border-radius: .2rem;
+    }
+}
+

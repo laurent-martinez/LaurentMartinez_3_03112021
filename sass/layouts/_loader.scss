@@ -1,0 +1,153 @@
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    background-color: #fba8a4;
+    background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+    animation: fadeout 9s ease-out forwards;
+    z-index: -1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    & h2 {
+        
+        font-family: 'Shrikhand', cursive;
+        font-weight: 700;
+        font-size: 6rem;
+        color: white;
+        text-shadow: 3px 3px 3px grey;
+    }
+    & #food {
+        & #cat {
+            animation: cat 0.7s  ease-out infinite alternate-reverse;
+                & #Vector_2_2 {
+                    animation: catheadmove 0.7s infinite ease-in-out alternate-reverse;
+                    transform-origin: bottom;
+                }
+                & #Vector_9_2 {
+                    animation: cattales 0.7s infinite ease-in-out alternate-reverse;
+                    transform-origin: left;
+                }
+                & #Vector_3_2,#Vector_5_2,#Vector_6_2,#Vector_7_2,#Vector_8_2,#Vector_13_2,#Vector_14_2 {
+                    animation: catbody 0.7s infinite ease-in-out alternate-reverse;
+                }
+
+            }
+            & #hat {
+            animation: hat 0.7s ease-out infinite alternate-reverse;
+            }
+            & #man {
+                animation: man 0.7s .15s ease-out infinite alternate-reverse;
+            }
+            & #fork-spoon {
+                animation: forks 0.7s ease-in-out infinite alternate-reverse;
+                transform-origin: bottom;
+            
+            }
+            & #man {
+                & #Vector_16 , #Vector_21 {
+                    animation: headmove 0.7s infinite ease-in-out alternate-reverse;
+                    transform-origin: bottom;
+                }
+            
+            }
+            @keyframes hat {
+                0% {
+                    transform: translateY(0%);
+                }
+                100% {
+                    transform: translateY(-5%);
+                }
+            }
+            
+            @keyframes man {
+                0% {
+                    transform: translateY(0%);
+                }
+                100% {
+                    transform: translateY(-9%);
+                }
+            }
+            
+            
+            @keyframes cat {
+                0% {
+                    transform: translateY(0%);
+                }
+                100% {
+                    transform: translateY(-20%);
+                }
+            }
+            
+            @keyframes catbody {
+                0% {
+                    transform: translateY(0%);
+                }
+                100% {
+                    transform: translateY(-1%);
+                }
+                
+            }
+            @keyframes forks {
+                0% {
+                    transform: rotate(0deg) ;
+            
+                    
+                }
+                100% {
+                    transform: rotate(20deg) ;
+                }
+            }
+
+            @keyframes fadeout {
+                0% {
+                    z-index: 99999;
+                    opacity: 1;
+                }
+                95% {
+                    opacity: 1;
+                    z-index: 99999;
+                }
+                100% {
+                    opacity: 0;
+                    
+                }
+            }
+            
+            @keyframes headmove {
+                0% {
+                    transform: rotateZ(0deg);
+                }
+                100% {
+                    transform: rotateZ(1deg);
+                }
+            }
+            
+            
+            @keyframes catheadmove {
+                0% {
+                    transform: rotateZ(0deg);
+                }
+                100% {
+                    transform: rotateZ(.6deg);
+                }
+            }
+            
+            @keyframes cattales {
+                0% {
+                    transform: rotate(-6deg) ;
+            
+                    
+                }
+                100% {
+                    transform: rotate(-4deg) ;
+                }
+            }
+    }
+}
+

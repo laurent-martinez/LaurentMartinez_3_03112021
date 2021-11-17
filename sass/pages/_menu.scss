@@ -1,0 +1,138 @@
+@use "../utils/index" as u ; 
+
+
+
+.menu {
+    position: relative;
+    z-index: 15;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    padding: 4rem 1.5rem 3rem 1.5rem;
+   
+    background-color: #f6f6f6;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; background-color: #f6f6f6;
+
+        
+         & h1 {
+            font-family: 'Shrikhand', cursive;
+            font-size: 3rem;
+            font-weight: 400;
+            padding-left: 1rem;
+         }
+         & i {
+             font-size: 2.8rem;
+             padding-right: 2rem;
+         }
+    }
+    &__subtitle {
+        font-size: medium;
+        padding: 3rem 0 .3rem 0rem;
+        margin-left: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-bottom: .3rem u.$accent solid;
+        width: 5ch;
+    }
+   
+    &__card {
+        
+        padding: 1.5rem 2rem 1.5rem 1.5rem;
+        margin-bottom: 1.5rem;
+        background-color: white;
+        border-radius: 2rem;
+        opacity: 0;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66); 
+        box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66);
+        animation: fadeInUp forwards 0.75s ease-in-out;
+        height: 100%;
+        position: relative;
+        /*
+        &::after {
+            content: '\f058';
+            font-weight: 900;
+            color: white;
+
+            display: flex;
+            position: absolute;
+            align-items: center;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            right: 0;
+            background-color: #99E2D0;
+            width: 100px;
+            height: 100%;
+            border-radius: 0rem 2rem 2rem 0rem;
+            content: "\f058";           
+            overflow: hidden;
+        }
+        &:hover::after {
+           
+            animation: selectFood 1s .1s ;
+            transition-duration: right;
+            
+            }
+        */
+        &:nth-child(1) {
+            animation-delay: .25s;
+        }
+        &:nth-child(2) {
+            animation-delay: .5s;
+                }
+        &:nth-child(3) {
+            animation-delay: .75s;
+        }
+        &:nth-child(4) {
+        animation-delay: 1s;
+        }
+          & h3 {
+              font-size: large;
+              padding-bottom: .5rem;
+          }
+          &__info {
+              display: flex;
+             justify-content: space-between;
+              font-size: medium;
+          }
+    }
+    &__button {
+        margin: 5rem auto;
+        display: flex;
+        justify-content: center;
+        & .btn-restaurant {
+            font-weight: 530;
+            padding: 1.6rem 5rem;
+        }
+    }
+
+}
+
+@keyframes  fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* @keyframes selectFood {
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    
+    100% {
+        opacity: 1;
+      transform: translateX(-20%);
+    }
+}
+
+*/
