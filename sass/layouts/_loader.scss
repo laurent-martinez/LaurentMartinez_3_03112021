@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     z-index: -1; 
-     animation: fadeout 9s infinite ease-out forwards;
+     animation: fadeout 9s ease-out forwards;
     background-color: #fba8a4;
     background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
     &__title  {
@@ -32,8 +32,8 @@
        
             & .spinner {
                     margin-bottom: 4rem;
-                    width: 15rem;
-                    height: 15rem;
+                    width: 10rem;
+                    height: 10rem;
                     position: relative;
                     display: flex;
                     flex-direction: column;
@@ -50,11 +50,13 @@
                           border: 1rem solid transparent;
                           border-radius: 50%;
                           border-top-color: #9356DC;
-                          animation: spinnerOne 1s linear infinite;
+                          border-right-color: #9356DC;
+                          animation: spinnerOne 1.3s ease-in infinite;
                           &:nth-child(2) {
                             border: 1rem solid transparent;
                             border-bottom-color:#FF79DA ;
-                            animation: spinnerTwo 1s linear infinite;
+                            border-left-color:#FF79DA ;
+                            animation: spinnerTwo 1.3s ease-out infinite;
                         }
                       }
                      
