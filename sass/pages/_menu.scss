@@ -50,7 +50,6 @@
         animation: fadeInUp forwards 0.75s ease-in-out;
         height: 100%;
         position: relative;
-        /*
         &::after {
             content: '\f058';
             font-weight: 900;
@@ -64,19 +63,21 @@
             opacity: 0;
             right: 0;
             background-color: #99E2D0;
-            width: 100px;
+            width: 0px;
             height: 100%;
             border-radius: 0rem 2rem 2rem 0rem;
             content: "\f058";           
             overflow: hidden;
+            transition: opacity 0.5s, width 1.2s ;
+            transform-origin: right;
         }
         &:hover::after {
-           
-            animation: selectFood 1s .1s ;
-            transition-duration: right;
+           opacity: 1;
+           width: 100px;
+          
             
             }
-        */
+        
         &:nth-child(1) {
             animation-delay: .25s;
         }
