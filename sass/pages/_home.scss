@@ -5,7 +5,6 @@
     color: #323232;
 	border: none;
 	border-radius: 0;
-	outline: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -30,6 +29,9 @@
             margin-right: 1rem;
             margin-top: -.5rem;
           
+        }
+        & input {
+            outline: none;
         }
 }
 
