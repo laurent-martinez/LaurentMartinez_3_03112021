@@ -51,35 +51,12 @@
         animation: fadeInUp forwards 0.75s ease-in-out;
         height: 100%;
         position: relative;
-     /*   &::after {
-            
-            content: "\f058";
-            font-family: "Font Awesome 5 Free";
-            display: inline-block;
-            padding-right: 3px;
-            font-variant: normal;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;        
-            vertical-align: middle;
-            font-weight: 900;
-            position: absolute;
-            color: black;
-            top: 0;
-            bottom: 0;
-            opacity: 0;
-            right: 0;
-            background-color: #99E2D0;
-            width: 0px;
-            height: 100%;
-            border-radius: 0rem 2rem 2rem 0rem;
-            transition: opacity 0.5s, width 1.2s ;
-            transform-origin: right;
-        } */
+
         &:hover .boldy {
             margin-right: 10rem;
           
             }
-        &:hover .icon {
+        &:hover .select-icon {
                 opacity: 1;
                 width: 10rem;
                 & i {
@@ -107,7 +84,7 @@
               display: flex;
              justify-content: space-between;
               font-size: medium;
-                .test {
+                .overflow {
                     text-overflow: ellipsis;
                     content: '...';
                     overflow: hidden;
@@ -115,7 +92,7 @@
                     margin-right: 1rem;
                 }
             
-                 & .title {
+                 & .details {
                      
                     text-overflow: ellipsis " [..]";
                     overflow: hidden;
@@ -129,7 +106,7 @@
               
                   
               } 
-              & .icon {
+              & .select-icon {
              
                 display: flex;
                 justify-content: center;
