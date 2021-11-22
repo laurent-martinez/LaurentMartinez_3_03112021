@@ -1,4 +1,4 @@
-@use "../utils/index" as u ; 
+@use "../utils/index" as * ; 
 
 
 
@@ -17,7 +17,7 @@
 
         
          & h1 {
-            font-family: 'Shrikhand', cursive;
+            @include header;
             font-size: 3rem;
             font-weight: 400;
             padding-left: 1rem;
@@ -34,7 +34,7 @@
         margin-left: 1rem;
         font-weight: 400;
         text-transform: uppercase;
-        border-bottom: .3rem u.$accent solid;
+        border-bottom: .3rem $accent solid;
         width: 5ch;
     }
    
@@ -60,7 +60,7 @@
                 opacity: 1;
                 width: 10rem;
                 & i {
-                    animation: selectFood 1.2s;
+                    animation: selectFood 1.2s  forwards;
                 }
                
             }
@@ -89,7 +89,6 @@
                     content: '...';
                     overflow: hidden;
                     white-space: nowrap;
-                    margin-right: 1rem;
                 }
             
                  & .details {
@@ -102,29 +101,28 @@
            
               
               & .boldy {
-                  transition: 1.2s;
+                  transition: .8s ease-out;
               
                   
               } 
               & .select-icon {
              
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include center;
                 font-size: x-large;
                 font-weight: 900;
                 position: absolute;
-                color: white;
                 top: 0;
-                bottom: 0;
-                opacity: 0;
                 right: 0;
+                color: white;
                 background-color: #99E2D0;
-                width: 0px;
+                width: 0;
                 height: 100%;
                 border-radius: 0rem 2rem 2rem 0rem;
-                transition: opacity 0.5s, width 1.2s ;
+                transition: width .8s ease-out ;
                 transform-origin: right;
+                & i {
+                    color: transparent;
+                }
               }
           }
     }
@@ -154,12 +152,16 @@
 
  @keyframes selectFood {
     0% {
+        color: white;
         transform: rotate(0deg)
     }
-    
+    70% {
+        transform: rotate(360deg);
+    }
     100% {
-    
-      transform: rotate(360deg);
+        transform: rotate(360deg);
+        color: white;
+     
     }
 }
 

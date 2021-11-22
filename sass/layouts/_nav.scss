@@ -1,4 +1,4 @@
-@use "../utils/index" as u;
+@use "../utils/index" as *;
 
 .nav {
     
@@ -30,23 +30,15 @@
                 //background-color: pastel(u.$primary);
                 background-color: hsl(267, 100%, 95%);
                     & .nav__tab__icon {
-                        color: #9356DC;
-                       
-                     
+                        color: $primary;
                     }
-               
               }
-             
-            
             &__icon {
                font-size: 1.9rem;
                 padding-right: 3rem;
                 color: #5a5a5a;
                 transition: transform .4s;
-                
             }
-         
-           
         }
         &__tab::before {
             counter-increment: counter-name;
@@ -58,11 +50,9 @@
             width: 2em;
             height: 2em;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include center;
             border: none;
-            background-color: u.$primary;
+            background-color: $primary;
             color: white;
             box-sizing: border-box;
         }

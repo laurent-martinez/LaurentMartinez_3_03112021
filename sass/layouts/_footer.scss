@@ -1,4 +1,4 @@
-
+@use "../utils/index" as *;
 
 .footer {
     background-color: #323232;
@@ -7,7 +7,7 @@
   
       &__logo {
           padding: 2rem 0 .5rem 2rem;
-        font-family: 'Shrikhand', cursive;
+        @include header;
         font-size: 1.6rem;
         font-weight: lighter;
       }

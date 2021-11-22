@@ -1,0 +1,21 @@
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin header {
+    font-family: 'Shrikhand', cursive;
+}
+@mixin text {
+    font-family: 'Roboto', sans-serif;;
+}
+
+@mixin center-absolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

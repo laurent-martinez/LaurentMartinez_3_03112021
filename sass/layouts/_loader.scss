@@ -1,33 +1,26 @@
+@use "../utils/index" as *;
+
 
 .container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @include center-absolute;
     width: 100vw;
     height: 100vh;
     opacity: 0;
-
-    display: flex;
+    @include center;
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
     z-index: -1; 
-     animation: fadeout 9s ease-out forwards;
+     animation: fadeout 1s ease-out forwards;
     background-color: #fba8a4;
     background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
     &__title  {
-        font-family: 'Shrikhand', cursive;
+        @include header;
         font-weight: 700;
         font-size: 3.5rem;
         color: white;
         text-shadow: 3px 3px 3px grey;
     }
     &__loader {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         flex-direction: column-reverse;
        
             & .spinner {
@@ -37,27 +30,24 @@
                
                     border-radius: 5rem;
                     position: relative;
-                    display: flex;
+                    @include center;
                     flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    
                       &  div {
                           position: absolute;
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
+                          @include center;
                           width: 100%;
                           height: 100%;
                           box-sizing: border-box;
                           border: 1rem solid transparent;
                           border-radius: 50%;
-                          border-top-color: #9356DC;
-                          border-right-color: #9356DC;
+                          border-top-color: $primary;
+                          border-right-color: $primary;
                           animation: spinnerOne 1.3s ease-in infinite;
                           &:nth-child(2) {
                             border: 1rem solid transparent;
-                            border-bottom-color:#FF79DA ;
-                            border-left-color:#FF79DA ;
+                            border-bottom-color: $secondary ;
+                            border-left-color: $secondary ;
                             animation: spinnerTwo 1.3s ease-out infinite;
                         }
                       }

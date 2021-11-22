@@ -1,15 +1,15 @@
-@use "./utils/index" as u;
+@use "./pages/index" as p;
+@use "./utils/index" as *;
 @use "./components/index" as c;
 @use "./base/index.scss" as b;
 @use "./layouts/index.scss" as l;
-@use "./pages/index" as p;
 
 html {
     font-size: 62.5%;
   
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    @include text;
     width: 100%;
     height: 100%;
    
@@ -26,7 +26,7 @@ h3, ul {
 }
 p {
     margin: 0;
-    font-family: 'Roboto', sans-serif;;
+    @include text;
 }
 img {
     object-fit: cover;
