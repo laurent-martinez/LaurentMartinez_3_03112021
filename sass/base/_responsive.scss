@@ -1,4 +1,11 @@
-@use "../utils/variables" as * ;
+@use "../utils/index" as * ;
+
+
+
+
+
+
+
 
 @media #{$mobile-s} {
     .nav {
@@ -22,9 +29,141 @@
         }
         &__card {
             &:hover .select-icon {
-                width: 8rem;
+                width: 7rem;
+            }
+            &:hover .boldy {
+                margin-right: 7rem;
+            }
+            &:hover h3 {
+                margin-right: 7rem;
+            }
+            & h3, .overflow {
+                font-size: medium;
             }
         }
     }
       
+}
+
+/************************ TABLET **************************************************/
+
+@media #{$tablet} {
+    .logo__header img {
+        width: 30%;
+    }
+
+    .nav {
+           
+        &__tabs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+       
+        &__tab {
+            justify-content: center;
+            width: 70%;
+            &__icon {
+                font-size: x-large;
+            }
+            &__title {
+                font-size: larger;
+            }
+        }
+
+    }
+    .restaurant-cards {
+        width: 75%;
+    }
+
+    .menu {
+        &__title {
+            justify-content: space-evenly;
+            & h1 {
+                font-size: 4rem;
+            }
+        }
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__card {
+            width: 75%;
+        }
+    }
+}
+
+
+
+/**************** BIG DESKTOP ************************************************/
+
+@media #{$desktop-xl} {
+
+
+    .nav {
+           
+        &__tabs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+       
+        &__tab {
+            justify-content: center;
+            width: 25%;
+    
+        }
+
+    }
+    .restaurants {
+        &__group {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        & .restaurant-cards {
+            width: 22%;
+        }
+    }
+    .jumbotron img{
+        max-height: 80rem;
+        margin-bottom: -40rem;
+    }
+    .menu {
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 14px );
+        -webkit-backdrop-filter: blur( 14px );
+     
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        display: flex;
+        flex-direction: column;
+       
+        margin: 0 4rem 0 4rem;
+        &__title {
+            width: 50%;
+            margin: 0 auto;
+            background-color: transparent;
+            & h1 {
+                font-size: 5rem;
+            }
+        }
+        &__main h2{
+                
+           
+            font-size: x-large;
+            margin: 2rem auto;
+        
+        }
+ 
+        &__cards {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        &__card {
+            width: 30%;
+        }
+     
+    }
 }

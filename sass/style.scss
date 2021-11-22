@@ -1,8 +1,8 @@
 @use "./pages/index" as p;
 @use "./utils/index" as *;
 @use "./components/index" as c;
-@use "./base/index.scss" as b;
 @use "./layouts/index.scss" as l;
+@use "./base/index.scss" as b;
 
 html {
     font-size: 62.5%;

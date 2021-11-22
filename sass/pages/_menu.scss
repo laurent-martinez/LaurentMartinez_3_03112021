@@ -51,7 +51,9 @@
         animation: fadeInUp forwards 0.75s ease-in-out;
         height: 100%;
         position: relative;
-
+        &:hover h3 {
+            margin-right: 10rem;
+        }
         &:hover .boldy {
             margin-right: 10rem;
           
@@ -79,6 +81,12 @@
           & h3 {
               font-size: large;
               padding-bottom: .5rem;
+              text-overflow: ellipsis;
+              content: '...';
+              overflow: hidden;
+              white-space: nowrap;
+              transition: .8s ease-out;
+          
           }
           &__info {
               display: flex;
