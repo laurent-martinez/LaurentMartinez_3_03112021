@@ -3,9 +3,8 @@
 
 .container {
     @include center-absolute;
-    width: 100vw;
-    height: 100vh;
     opacity: 0;
+    position: fixed;
     @include center;
     flex-direction: column-reverse;
     z-index: -1; 
