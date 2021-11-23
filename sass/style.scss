@@ -10,8 +10,7 @@ html {
 }
 body {
     @include text;
-    
-    animation: body-loader 3s ease-out;
+    //animation: body-loader 3s ease-out;
    
 }
 a, li {
@@ -38,17 +37,9 @@ img {
 
 @keyframes body-loader {
     0% {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+      overflow: hidden;
     }
     100% {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    overflow: hidden;
     }
 }
