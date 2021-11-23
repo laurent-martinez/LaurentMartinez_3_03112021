@@ -1,12 +1,13 @@
 
 /* COLOR *************************/
 
-$primary : #9356DC;
+$primary : rgb(	147,86,220);
 $secondary : #FF79DA;
 $accent : #99E2D0;
 
 /* RESPONSIVE ********************/
 
 $mobile-s : "only screen and (max-width: 328px)";
-$tablet : "only screen and (min-width: 425px)";
+$tablet : "only screen and (min-width: 487px)";
+$desktop : "only screen and (min-width: 870px)";
 $desktop-xl : "only screen and (min-width: 1300px)";

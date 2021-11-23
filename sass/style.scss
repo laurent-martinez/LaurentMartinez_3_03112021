@@ -10,8 +10,8 @@ html {
 }
 body {
     @include text;
-    width: 100%;
-    height: 100%;
+    
+    animation: body-loader 3s ease-out;
    
 }
 a, li {
@@ -36,7 +36,19 @@ img {
     font-weight: bold;
 }
 
-
-
-    
-
+@keyframes body-loader {
+    0% {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    100% {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
