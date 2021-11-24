@@ -123,18 +123,6 @@
             padding-bottom: 2rem;
             & li:hover {
                 color: lighten($primary, 15%);
-
-            }
-            & li:last-child {
-                background-color: white;
-                color: black;
-                padding: .5rem;
-                border-radius: .5rem;
-                margin-left: 1rem;
-                &:hover {
-                    background-color: $primary;
-                    color: white;
-                }
             }
         }
         &__tabs {
@@ -158,37 +146,21 @@
             width: 50%;
         }
     }
-    .menu-pages {
-        background-color: #f6f6f6;
-
-    }
     .jumbotron img {
         max-height: 55rem;
         margin-bottom: -15rem;
     }
     .menu {
         margin: 0 4rem 0 4rem;
-        background: rgba( 246, 246, 246, 0.4 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        -webkit-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 10px );
-        -webkit-backdrop-filter: blur( 10px );
-        border: 1px solid rgba( 246, 246, 246, 0.18 );
-        -webkit-border: 1px solid rgba( 246, 246, 246, 0.18 );
+        background-color: #f6f6f6;
+
         &__title {
             width: 75%;
             margin: 0 auto;
-            background: rgba( 246, 246, 246, 0.8 );
-            backdrop-filter: blur( 14.5px );
-            -webkit-backdrop-filter: blur( 14.5px );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            border: 1px solid rgba( 246, 246, 246, 0.18 );
             padding: 2.2rem;
         }
     
-    }
-
-    
+    } 
 }
 
 
@@ -211,8 +183,6 @@
         }
     }
     .restaurants {
-   
-       
         & .starters {
             display: flex;
         }
@@ -224,17 +194,7 @@
             width: 22%;
         }
     }
-    .jumbotron img{
-        max-height: 55rem;
-        margin-bottom: -40rem;
-    }
-   
     .menu {
-        background: rgba( 246, 246, 246, 0.4 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 10px );
-        -webkit-backdrop-filter: blur( 10px );
-        border: 1px solid rgba( 246, 246, 246, 0.18 );
         display: flex;
         flex-direction: column;
        
@@ -245,11 +205,6 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba( 246, 246, 246, 0.8 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 14.5px );
-            -webkit-backdrop-filter: blur( 14.5px );
-            border: 1px solid rgba( 246, 246, 246, 0.18 );
             padding: 2.2rem;
             & h1 {
                 font-size: 4rem;
@@ -262,13 +217,6 @@
             font-size: x-large;
             padding: 0;
         }
-        &__main {
-           & h2 {
-            font-size: x-large;
-            color: white;
-            text-shadow: .5px .5px 5px black;
-           }
-            }
         &__cards {
             flex-direction: row;
             justify-content: space-evenly;
