@@ -45,6 +45,7 @@
         background-color: white;
         border-radius: 2rem;
         opacity: 0;
+        overflow: hidden;
         cursor: pointer;
         -webkit-box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66); 
         box-shadow: 0px 5px 9px 0px rgba(204,204,204,0.66);
@@ -62,7 +63,7 @@
                 opacity: 1;
                 width: 10rem;
                 & i {
-                    animation: selectFood 1.2s  forwards;
+                    transform: rotate(360deg);
                 }
                
             }
@@ -102,8 +103,8 @@
                  & .details {
                      
                     text-overflow: ellipsis;
-                    content: '...';
                     overflow: hidden;
+                    content: '...';
                     white-space: nowrap;
                     margin-right: 1rem;
                  }
@@ -130,7 +131,7 @@
                 transition: width .8s ease-out ;
                 transform-origin: right;
                 & i {
-                    color: transparent;
+                    transition: ease .5s;
                 }
               }
           }
@@ -159,18 +160,4 @@
     }
 }
 
- @keyframes selectFood {
-    0% {
-        color: white;
-        transform: rotate(0deg)
-    }
-    70% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(360deg);
-        color: white;
-     
-    }
-}
 
