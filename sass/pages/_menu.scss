@@ -101,7 +101,8 @@
             
                  & .details {
                      
-                    text-overflow: ellipsis " [..]";
+                    text-overflow: ellipsis;
+                    content: '...';
                     overflow: hidden;
                     white-space: nowrap;
                     margin-right: 1rem;
